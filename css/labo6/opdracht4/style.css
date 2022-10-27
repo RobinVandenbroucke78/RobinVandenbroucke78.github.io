@@ -1,0 +1,22 @@
+body{
+    font-family: Verdana, serif;
+    font-size: 1.1em;
+    background-color: #8D99AE;
+    color: blue;
+}
+
+h1{
+    font-variant: all-small-caps;
+    background-color: red;
+}
+
+a:hover{
+    border-radius: inherit;
+    border-style: dashed;
+}
+
+.stippeltjesrand{
+    border-style: dotted;
+    border-radius: 1px;
+
+}
