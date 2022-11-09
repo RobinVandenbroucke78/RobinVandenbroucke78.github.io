@@ -1,0 +1,99 @@
+.headers{
+    text-align: center;
+    font-size: 45px;
+    color: #011f4b;
+}
+
+.name{
+    text-align: center;
+    font-size: 35px;
+    color: 	#005b96;
+}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.sectie {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.hobbies{
+    text-align: center;
+    background-color: #b3cde0;
+}
+
+h2{
+    text-align: center;
+    font-size: 35px;
+    color: 	#005b96;
+}
+
+table{
+    border-style: dotted;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* recenter moeilijkere css */
+
+.o-layout {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.o-layout__item {
+    flex-basis: 100%;
+}
+
+.o-layout--align-center {
+    align-items: center;
+}
+
+.o-layout--gutter-lg {
+    margin: 0 32px;
+}
+
+.o-layout--gutter-lg > .o-layout__item {
+    padding: 0 32px;
+}
+
+.u-flex-basis-auto {
+    flex-basis: auto !important;
+}
+
+.u-flex-grow-1 {
+    flex-grow: 1 !important;
+}
+
+.u-1-of-3 {
+    flex-basis: calc(100% / 3) !important;
+}
+
+@media (min-width: 576px) {
+    .u-1-of-3-bp1 {
+        flex-basis: calc(100% / 3) !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .u-1-of-3-bp2 {
+        flex-basis: calc(100% / 3) !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .u-1-of-3-bp3 {
+        flex-basis: calc(100% / 3) !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .u-1-of-3-bp4 {
+        flex-basis: calc(100% / 3) !important;
+    }
+
+}
