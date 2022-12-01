@@ -1,0 +1,43 @@
+.top{
+    height: 200px;
+    background-image: url("fotos/bgsky3.jpg");
+    width: 100%;
+    text-align: center;
+    color: darkblue;
+}
+
+
+.top .top-plane{
+    margin-left: 90px;
+    margin-right: 60px;
+}
+
+.titel1{
+    font-size: 300%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.titel2{
+    font-size: 240%;
+    font-weight: bold;
+}
+
+
+.news{
+    align-content: end;
+    width: 250px;
+    background-color: #dddddd;
+    border: 1px #999999;
+    color: #666666;
+    font-size: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.news h3{
+    color: white;
+    background-color: blue;
+    font-size: 120%;
+    text-align: center;
+}
