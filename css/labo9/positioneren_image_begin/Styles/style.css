@@ -1,0 +1,25 @@
+article {
+    border: 1px solid;
+}
+h2{
+    font-size: 30px;
+    font-family: Arial, serif;
+    margin: 10px;
+}
+p {
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25em;
+    font-family: Verdana, serif;
+}
+p, img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.rechts{
+    flex-direction: row-reverse;
+}
