@@ -64,9 +64,8 @@ h1 hr{
     font-size: 13px;
 }
 
-.nav ul hr{
-    border: 1px solid #ebe8e8;
-
+.nav ul li hr{
+    border-left: 1px solid #ebe8e8;
 }
 
 .main_header img{
@@ -80,7 +79,7 @@ h1 hr{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 40px;
-    text-shadow: #8D99AE;
+    text-shadow: 2px 2px 2px #8D99AE;
 
 }
 .main_header{
