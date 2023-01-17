@@ -16,7 +16,7 @@ h1{
     color: black;
 }
 
-h1 hr{
+.hr{
     border: 2px solid black;
 }
 
@@ -54,7 +54,6 @@ h1 hr{
 .nav ul li a{
     text-transform: uppercase;
     text-decoration: none;
-    color: gray;
     font-size: 13px;
     color: #5b4746;
 
@@ -84,8 +83,9 @@ h1 hr{
     text-shadow: 2px 2px 2px #8D99AE;
 
 }
+
 .main_header{
-    position: relative;
+    width: 100%;
     text-align: center;
     color: white;
 }
