@@ -4,3 +4,123 @@
     height: auto;
     display: block;
 }
+
+body {
+    font-family: Helvetica, serif;
+    width: 100%;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: black;
+}
+
+h1 hr{
+    border: 2px solid black;
+}
+
+.header{
+    text-align: center;
+    width: 100%;
+}
+.header img{
+    height: 50px;
+
+}
+
+.header hr{
+    border: 1px solid #ebe8e8;
+}
+
+.nav ul{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: 50px;
+    justify-content: center;
+    justify-items: center;
+    list-style-type: none;
+    padding: 10px;
+
+}
+.nav ul li{
+    color: gray;
+    width: 90%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    color: #5b4746;
+}
+
+.nav ul li a:hover{
+    text-decoration: underline 2px;
+    color: #fff100;
+    font-size: 13px;
+}
+
+.nav ul hr{
+    border: 1px solid #ebe8e8;
+
+}
+
+.main_header img{
+    height: 500px;
+    width: 100%;
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    text-shadow: #8D99AE;
+
+}
+.main_header{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.main_header hr{
+    border: 1px solid #ebe8e8;
+}
+
+
+@media screen and (min-width: 700px) {
+    header{
+        width: 600px;
+    }
+
+    nav{
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    header{
+        width: 750px;
+    }
+
+    nav{
+        width: 750px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header{
+        width: 980px;
+    }
+
+    nav{
+        width: 980px;
+    }
+}
+
