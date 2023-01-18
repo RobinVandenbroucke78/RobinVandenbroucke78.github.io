@@ -1,0 +1,173 @@
+body{
+    width: 992px;
+    justify-content: center;
+    background-color: #00d4ef;
+    font-family: "Segoe UI Emoji", Arial, serif;
+    font-size: 1.2em;
+    background-image: url("../images/background.png");
+    background-repeat: repeat-x;
+}
+
+.webpagina{
+    display: inline-block;
+    background-color: whitesmoke;
+    width: 990px;
+    height: 100%;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+nav{
+    background-color: rgb(193,156,214);
+    width: 100%;
+    height: 50px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: auto;
+}
+
+nav ul li{
+    display: inline;
+    text-align: center;
+}
+
+.contact {
+    float: right;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000ece;
+    font-weight: bold;
+    padding: 1em;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.header-image img{
+    width: 100%;
+    height: 300px;
+}
+
+.info-body{
+    margin: 1em;
+    background-color: whitesmoke;
+}
+
+.info-body h1{
+    text-align: center;
+    background-color: whitesmoke;
+    font-size: 3em;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+ol .Inhoud-header{
+    list-style-type: upper-roman;
+}
+
+
+ol li ul {
+    list-style-type: square;
+    padding-left: 10px;
+}
+
+ol li ul .relationele:active{
+    font-weight: bold;
+}
+
+.operatoren h2{
+    font-size: 2.1em;
+}
+
+.operatoren p{
+    font-size: 1em;
+}
+
+.opmerking{
+    background-image: url("../images/note.svg");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-color: #97ffba;
+    border-radius: 15px;
+    height: 150px;
+    padding-left: 0.5em;
+}
+
+.opmerking .title {
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.table {
+    border: 1px dotted black;
+    width: 100%;
+}
+
+.table-header {
+    background-color: #97ffba;
+    text-align: center;
+
+}
+
+.table-small-header {
+    background-color: #ec092c;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.table-content-gray {
+    background-color: #bebebe;
+}
+
+.table-content-white {
+    background-color: #ebe8e8;
+}
+
+.symbol{
+    float: right;
+}
+
+td {
+    padding: 5px;
+}
+
+.logos {
+    padding: 25px;
+    width: 80px;
+    float: left;
+}
+
+.operatoren {
+    width: 500px;
+    padding: 10px;
+    float: left;
+}
+
+.inhoudstafel {
+    width: 100px;
+    float: right;
+}
+
+.inhoud {
+    width: 100%;
+}
+
+
+
+@media (min-width: 992px) {
+    body{
+        width: 992px;
+        
+    }
+}
+@media (min-width: 500px) {
+    body{
+        width: 100%;
+    }
+}
