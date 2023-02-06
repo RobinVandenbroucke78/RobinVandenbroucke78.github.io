@@ -1,1 +1,3 @@
-# RobinVandenbroucke78.github.io
+- Welkom op de Github van Robin Vandenbroucke
+- Student Toegepaste Informatica
+- Vives Hogeschool Kortrijk
