@@ -1,5 +1,5 @@
 .checked{
-    background-image: url("/css/labo6/opdracht6/images/checked.png");
+    background-image: url("/semester 1/cssester 1/css/labo6/opdracht6/images/checked.png");
     background-size: 20px 20px;
     background-repeat: no-repeat;
     padding-left: 30px;
@@ -7,7 +7,7 @@
 }
 
 .unchecked{
-    background-image: url("/css/labo6/opdracht6/images/unchecked.png");
+    background-image: url("/semester 1/cssester 1/css/labo6/opdracht6/images/unchecked.png");
     background-size: 20px 20px;
     background-repeat: no-repeat;
     padding-left: 30px;
