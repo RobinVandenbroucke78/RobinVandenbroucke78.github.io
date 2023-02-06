@@ -1,0 +1,3 @@
+- Welkom op de Github van Robin Vandenbroucke
+- Student Toegepaste Informatica
+- Vives Hogeschool Kortrijk
