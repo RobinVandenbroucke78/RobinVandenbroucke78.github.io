@@ -1,6 +1,8 @@
 const setup = () => {
-    let bereken = document.getElementById("herbereken");
-    bereken.addEventListener("click", berekenen);
+    let aantal = document.getElementsByClassName("aantal");
+    for(let i = 0; i < aantal.length; i++){
+        aantal[i].addEventListener("change", berekenen)
+    }
 }
 
 const berekenen = () => {
@@ -13,13 +15,13 @@ const berekenen = () => {
     const totaal = document.getElementById("totaal");
 
     for (let i = 0; i < aantal.length; i++) {
-        const prijs_product = parseFloat(prijs[i].innerHTML);
-        const aantal_product = aantal[i].value;
-        const btw_product = parseFloat(btw[i].innerHTML) / 100 +1;
+        const prijs_product = parseFloat(prijs[i].innerHTML.replace(".", ","));
+        const aantal_product = aantal[i].value.replace(".", ",");
+        const btw_product = parseFloat(btw[i].innerHTML.replace(".", ",")) / 100 +1;
         const prijsBerekening = parseFloat(prijs_product * aantal_product * btw_product);
-        subtotaal[i].innerHTML = prijsBerekening.toFixed(2) + " Eur";
+        subtotaal[i].innerHTML = prijsBerekening.toFixed(2).replace(".", ",") + " Eur";
         waarde += prijsBerekening;
     }
-    totaal.innerHTML = waarde.toFixed(2) + " Eur";
+    totaal.innerHTML = waarde.toFixed(2).replace(".", ",") + " Eur";
 }
 window.addEventListener("load", setup);
