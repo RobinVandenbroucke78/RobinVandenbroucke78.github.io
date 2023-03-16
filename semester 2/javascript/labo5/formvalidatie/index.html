@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript" charset="utf-8"
+            src="scripts/code.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+ <label for="voornaam">Voornaam</label>
+ <input type="text" id="voornaam"><br>
+ <label for="familienaam">Familienaam</label>
+ <input type="text" id="familienaam" required><br>
+ <label for="geboortedatum">Geboortedatum</label>
+ <input type="date" id="geboortedatum" required pattern="yyyy-mm-dd"><br>
+ <label for="email">email</label>
+ <input type="text" id="email" required pattern="[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}"><br>
+ <label for="aantal">aantal kinderen</label>
+ <input type="number" id="aantal"><br>
+ <input type="button" value="Valideer" id="button">
+</form>
+</body>
+</html>
