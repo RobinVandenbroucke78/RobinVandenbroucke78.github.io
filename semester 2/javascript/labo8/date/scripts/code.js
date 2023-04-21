@@ -1,14 +1,14 @@
 const setup = () => {
-    let start = new Date(); //begint bij 0
+    let start = new Date();
     console.log(start);
 
     //dag van de week
     console.log(start.getDay());
 
-    //datum dag van de maand
+    //dag van de maand
     console.log(start.getDate());
 
-    //maand van het jaar
+    //maand van het jaar (januari is 0)
     console.log(start.getMonth());
 
     //datum
@@ -27,15 +27,22 @@ const setup = () => {
     let event = new Date('2023-04-10T23:15:30');
     console.log(event.getDate());
 
+    console.log("toISOString: " + event.toISOString());
+
+    console.log("toDateString: " + event.toDateString());
+
+    console.log("toTimeString: " + event.toTimeString());
+
     //aantal dagen leeft
     let geboorte = new Date('2002-08-07');
     let nu = new Date()
     milli = nu - geboorte
-    dag = 1000 * 60 * 60 * 24
-    dagen = milli / dag
-    jaar = 1000 * 60 * 60 * 24 * 365
-    jaren = milli / jaar
-    console.log("Ik leef al: " + parseInt(dagen) + " dagen");
-    console.log("Ik leef al: " + parseInt(jaren) + " jaren");
+    day = 1000 * 60 * 60 * 24
+    days = milli / day
+    year = 1000 * 60 * 60 * 24 * 365
+    years = milli / year
+
+    console.log("Ik leef al: " + parseInt(days) + " dagen");
+    console.log("Ik leef al: " + parseInt(years) + " jaren");
 }
 window.addEventListener("load", setup);
