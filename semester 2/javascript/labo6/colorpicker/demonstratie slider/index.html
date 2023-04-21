@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Demonstratie slider</title>
+	<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+	<link rel="stylesheet" href="styles/styles.css"/>
+</head> 
+<body> 
+<div class="colorpicker">
+	<div class="components">
+		<div class="component">
+			<span>0<input id="red" type="range" class="slider" min="0" max="255" />255</span>
+			<span>Red</span>
+			<span id="lblRed">0</span>
+		</div>
+		<div class="component">
+			<span>0<input id="green" type="range" class="slider" min="0" max="255" />255</span>
+			<span>Green</span>
+			<span id="lblGreen">0</span>
+		</div>
+		<div class="component">
+			<span>0<input id="blue" type="range" class="slider" min="0" max="255" />255</span>
+			<span>Blue</span>
+			<span id="lblBlue">0</span>
+		</div>
+	</div>
+	<p class="swatch" id="swatch"></p>
+	<input type="button" value="send" id="send">
+</div>
+<section id="swatchcomponents"></section>
+</body> 
+</html> 
