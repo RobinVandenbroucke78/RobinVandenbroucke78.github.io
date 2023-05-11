@@ -1,38 +1,31 @@
 const addSwatchComponent = (red, green, blue) => {
     let swatch = buildSwatchComponent(red, green, blue);
     document.getElementById("swatchComponents").append(swatch);
-}
-
-const configureSwatch = (swatch, red, green, blue) => {
-
-    swatch.setAttribute("data-red", red);
-
-    swatch.setAttribute("data-green", green);
-
-    swatch.setAttribute("data-blue", blue);
-
-    swatch.style.background = "rgb(" + red + "," + green + "," + blue + ")";
 };
 
-const buildSwatchComponent = (red, green, blue) => {
+const configureSwatch = (swatch, swatchred, swatchgreen, swatchblue) => {
+    swatch.setAttribute("data-red", swatchred);
+    swatch.setAttribute("data-green", swatchgreen);
+    swatch.setAttribute("data-blue", swatchblue);
+    swatch.style.background = "rgb(" + swatchred + "," + swatchgreen + "," + swatchblue + ")";
+};
 
-        // maak de twee element nodes
-        let swatch = document.createElement("div");
-        let btnDelete = document.createElement("input");
+const buildSwatchComponent = (swatchred, swatchgreen, swatchblue) => {
+    // maak de twee element nodes
+    let swatch = document.createElement("div");
+    let btnDelete = document.createElement("input");
 
-        // stel de swatch in
-        swatch.className = "swatch";
-        configureSwatch(swatch, red, green, blue);
-        swatch.addEventListener("click", setColorPickerFromSwatch);
+    // stel de swatch in
+    swatch.className = "swatch";
+    configureSwatch(swatch, swatchred, swatchgreen, swatchblue);
+    swatch.addEventListener("click", setColorPickerFromSwatch);
 
-        // stel de delete knop in
-        btnDelete.setAttribute("type", "button");
-        btnDelete.setAttribute("value", "X");
-        btnDelete.addEventListener("click", deleteSwatch);
+    // stel de delete knop in
+    btnDelete.setAttribute("type", "button");
+    btnDelete.setAttribute("value", "x");
+    btnDelete.addEventListener("click", deleteSwatch);
 
-        // voeg de swatch en button toe aan de swatchcomponent
-        swatch.appendChild(btnDelete);
-        return swatch;
-    };
-
-
+    // voeg de swatch en button toe aan de swatchcomponent
+    swatch.appendChild(btnDelete);
+    return swatch;
+};

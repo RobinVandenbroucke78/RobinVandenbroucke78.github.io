@@ -2,41 +2,24 @@ const initialize = () => {
     document.getElementById("btnSave").addEventListener("click", saveSwatch);
     let sliders = document.getElementsByClassName("slider");
     for (let i = 0; i < sliders.length; i++) {
-        // we moeten zowel op het input als het change event reageren,
-        // zie http://stackoverflow.com/questions/18544890
-        sliders[i].addEventListener("change", update);
-        sliders[i].addEventListener("input", update);
+        sliders[i].addEventListener("change", updateSlider);
+        sliders[i].addEventListener("input", updateSlider);
     }
 
     restoreSliderValues();
     restoreSwatches();
 
-    update();
-};
-
-const saveSwatch = () => {
-    let red = document.getElementById("sldRed").value;
-    let green = document.getElementById("sldGreen").value;
-    let blue = document.getElementById("sldBlue").value;
-
-    // voeg swatch toe
-    addSwatchComponent(red, green, blue);
-
-    // bewaar kleurinfo van alle swatches in local storage
-    storeSwatches();
+    updateSlider();
 };
 
 const setColorPickerFromSwatch = (event) => {
-    if (event.target.className=="swatch") {
+    if (event.target.className == "swatch") {
         let swatch = event.target;
-        document.getElementById("sldRed").value = rgb.red;
-        document.getElementById("sldGreen").value = rgb.green
-        document.getElementById("sldBlue").value = rgb.blue
+        document.getElementById("sldRed").value = swatch.red;
+        document.getElementById("sldGreen").value = swatch.green;
+        document.getElementById("sldBlue").value = swatch.blue;
 
-
-        // helaas triggeren de .value wijzigingen niet automatisch
-        // een change event ds moeten we handmatig update oproepen
-        update();
+        updateSlider();
     }
 };
 
@@ -46,11 +29,21 @@ const deleteSwatch = (event) => {
     let swatch = button.parentNode;
     swatchComponents.removeChild(swatch);
 
-    // bewaar kleurinfo van alle swatches in local storage
-    storeSwatches();
+    storeSwatches(swatchComponents);
 };
 
-const update = () => {
+const saveSwatch = () => {
+    let sldred = document.getElementById("sldRed").value;
+    let sldgreen = document.getElementById("sldGreen").value;
+    let sldblue = document.getElementById("sldBlue").value;
+
+    addSwatchComponent(sldred, sldgreen, sldblue);
+
+    let swatchComponents = document.getElementById("swatchComponents");
+    storeSwatches(swatchComponents);
+};
+
+const updateSlider = () => {
     let red = document.getElementById("sldRed").value;
     document.getElementById("lblRed").innerHTML = red;
 
@@ -63,8 +56,7 @@ const update = () => {
     let swatch = document.getElementById("swatch");
     swatch.style.background = "rgb(" + red + "," + green + "," + blue + ")";
 
-    storeSliderValues();
+    storeSliderValues(red, green, blue);
 };
-
 
 window.addEventListener("load", initialize);
