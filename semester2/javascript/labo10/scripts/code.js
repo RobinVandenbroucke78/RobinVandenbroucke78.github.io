@@ -9,7 +9,7 @@ const setup = () => {
 
 const Go = () => {
     let input = document.getElementById("commandoInput");
-    let matches = input.value.match("^/[tygi]{1} .*");
+    let matches = input.value.match("^/[tygifs]{1} .*");
     if (matches != null) {
         let type = matches[0].charAt(1);
         let query = matches[0].substring(3);
@@ -83,6 +83,12 @@ const getLink = (type, query) => {
         case "i":
             link = "https://www.instagram.com/explore/tags/" + query;
             break;
+        case "f":
+            link = "https://www.facebook.com/" + query;
+            break;
+        case "s":
+            link = "https://www.snapchat.com/" + query;
+            break;
         default:
             break;
     }
@@ -103,6 +109,12 @@ const getSocialmediaName = (type) => {
             break;
         case "i":
             name = "Instagram";
+            break;
+        case "f":
+            name = "Facebook";
+            break;
+        case "s":
+            name = "Snapchat";
             break;
         default:
             break;

@@ -54,3 +54,25 @@ a.twitter-button {
     color: #ffffff;
     border: 0;
 }
+
+.facebook-card {
+    background-color: #011f4b !important;
+    color: white;
+}
+
+a.facebook-button {
+    background-color: #282828;
+    color: #ffffff;
+    border: 0;
+}
+
+.snapchat-card {
+    background-color: #fff100 !important;
+    color: black;
+}
+
+a.snapchat-button {
+    background-color: #282828;
+    color: #ffffff;
+    border: 0;
+}
